@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import "./App.css";
+import "./css/style.css";
+import Header from "./Header";
+import HomePage from "./Home";
+import AboutPage from "./About";
+import MusicPage from "./Music";
+
+const App = () => (
+  <Router>
+    <Header
+      brand=""
+      links={[
+        { label: "Home", path: "/" },
+        { label: "Skills", links: [{ label: "Music", path:"/music"},{label:"2D-Art",path:"/2d-art"}] },
+        { label: "About", path: "/about" },
+      ]}
+    />
+    {/* <Header
+      brand="Ringo The Bard Portfolio"
+      links={[
+        { label: "Home", path: "/" },
+        { label: "Skills", links: [{ label: "Music", path:"/music"},{label:"2D-Art",path:"/2d-art"}] },
+        { label: "About", path: "/about" },
+      ]}
+    /> */}
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/About" element={<AboutPage />} />
+      <Route path="/Music" element={<MusicPage />}/>
+    </Routes>
+  </Router>
+);
 
 export default App;

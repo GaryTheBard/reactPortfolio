@@ -1,0 +1,72 @@
+.darkGreen
+{
+    color: #5F6F52;
+}
+.lightGreen
+{
+    color: #A9B388;
+}
+.beige
+{
+    color: #FEFAE0;
+}
+.tan
+{
+    color: #B99470;
+}
+
+.darkGreenBackground
+{
+    background-color: #5F6F52;
+}
+.lightGreenBackground
+{
+    background-color: #A9B388;
+}
+.beigeBackground
+{
+    background-color: #FEFAE0;
+}
+.tanBackground
+{
+    background-color: #B99470;
+}
+
+.naviBar{
+    //background-color: #A9B388;
+    //background-color: #B91646;
+    background-color: #DFD8CA;
+  }
+
+.burgBackground
+{
+    background-color: #B91646;
+}
+.burgColor
+{
+    color: #B91646;
+}
+.tan2DarkBackground
+{
+    background: #DFD8CA;
+}
+.tan2DarkColor
+{
+    color: #DFD8CA;
+}
+.tan2LightBackground
+{
+    background-color: #FBF3E4;
+}
+.tan2LightColor
+{
+    color: #FBF3E4;
+}
+.dkGreenBackground
+{
+    background-color: #105652;
+}
+.dkGreenColor
+{
+    color: #105652;
+}
